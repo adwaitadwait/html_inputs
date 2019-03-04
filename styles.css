@@ -30,6 +30,16 @@ h1 {
     margin: 0 auto;
 }
 
+#first {
+    float: left;
+    margin: auto;
+}
+
+#second {
+    float: right;
+    margin: auto;
+}
+
 img {
     display: block;
     margin-left: auto;
