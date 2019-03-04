@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <<title>HTML Input Exercise</title>
+
+    <body>
+
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <h1>Does Purchasing An Unlimited Monthly MetroCard Make Sense?</h1>
+
+        <img src="img/metro.jpg" alt="Shot of a train arriving at the metro station."></img>
+
+        <p class="photo-source"> The New York City Subway by <a href="https://www.flickr.com/photos/runnx/466813027/in/photolist-Hfxft-fnQuX-71KFQC-4CYcvR-5sDSM4-4GCJL7-rMWiU3-7P7XFv-nZ9Y9G-ckqMVj-5Dt45M-ac9aXw-xm4DA-6BgSM5-9KzKrK-pKCmFe-81CDhG-ojB911-ac6jSR-62fWys-4xd56m-81CD8y-4h8UGQ-omKnh1-dMMGRi-6yCfFJ-rsqWmJ-U4Udpp-d1C2QW-dm6uUe-21B91eN-5MPzxw-u3Dsj-7eJLwt-4ijZBC-5t4gJu-7FnbvM-r4rAap-cS9pnJ-GfyHB1-cS9pws-mK45uH-5kNqaF-rQXXVQ-6yy9ya-6evsBE-4d1FC-oFrhGJ-62bHxT-enAnof">Michael</a>
+        </p>
+
+
+        <hr>
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Your styles should be called here -->
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      </head>
+
+      <div class="container">
+
+        <p><a href="http://web.mta.info/nyct/fare/FaresatAGlance.htm">The Metropolitan Transportation Authority Board</a> voted on January 25, 2017, to approve the lowest fare increase since 2009, when the MTA first began increasing
+          fares and tolls on a regular, biennial schedule. The new fares, which take effect March 19, will allow the MTA to continue to provide safe and reliable service.</p>
+        <hr>
+        <p></p>
+
+        <form id="option">
+          <h3>What is your preferred method of travel?</h3>
+          <p>Mark all that apply:
+          </p>
+          <input type="checkbox" id="walk" value="walk">
+          <label for="walk">Walking</label><br>
+          <br>
+          <input type="checkbox" id="subway" value="subway">
+          <label for="subway">Subway</label><br>
+          <br>
+          <input type="checkbox" id="app" value="app">
+          <label for="app App">Ridesharing (Lyft, Uber, VIA or Juno)</label><br>
+          <br>
+          <input type="checkbox" id="taxi" value="taxi">
+          <label for="taxi">Taxi (Yellow or green)</label><br>
+          <br>
+          <input type="checkbox" id="pcar" value="pcar">
+          <label for="pcar">Personal vehicle or carpool</label><br>
+          <br>
+          <input type="checkbox" id="bike" value="bike">
+          <label for="bike">Bicycle</label><br>
+        </form>
+
+        <br>
+        <hr>
+
+        <form id="numbers-input">
+          <h3>Total Number Of Rides Per Week — Subway Or Bus</h3>
+          <br>
+          <p>Bus: <input type="number" class="busr" id="busr" max=" 14" placeholder="Maximum 14" autofocus /></p>
+          <br>
+          <p>Subway: <input type="number" class="subwayr" id="subwayr" max=" 14" placeholder="Maximum 14" autofocus /></p>
+          <br>
+          <hr>
+        </form>
+
+        <form id="commute-time-radio">
+          <h2>How long is your commute?</h2>
+          <input type="radio" name="commutet" value="15"> 20 minutes or less
+          <br>
+          <br>
+          <input type="radio" name="commutet" value="30"> 21-45 minutes
+          <br>
+          <br>
+          <input type="radio" name="commutet" value="45"> 45 minutes to 1 hour
+          <br>
+          <br>
+          <input type="radio" name="commutet" value="60"> More than 1 hour
+          <br>
+          <br>
+        </form>
+        <br>
+        <hr>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+      <!-- Your javascript should be called here -->
+      <script src="main.js" type="text/javascript"></script>
+    </body>
+
+</html>
