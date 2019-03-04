@@ -33,50 +33,64 @@
       </head>
 
       <div class="container">
-
-        <p><a href="http://web.mta.info/nyct/fare/FaresatAGlance.htm">The Metropolitan Transportation Authority Board</a> voted on January 25, 2017, to approve the lowest fare increase since 2009, when the MTA first began increasing
-          fares and tolls on a regular, biennial schedule. The new fares, which take effect March 19, will allow the MTA to continue to provide safe and reliable service.</p>
-        <hr>
-        <p></p>
-
-        <form id="option">
-          <h3>What is your preferred method of travel?</h3>
-          <p>Mark all that apply:
-          </p>
-          <input type="checkbox" id="walk" value="walk">
-          <label for="walk">Walking</label><br>
+        <h4>The MTA Board has <a href="http://web.mta.info/mta/news/books/docs/Final-Board-Fare-and-Toll-Proposals.pdf">proposed</a> two options for fare hikes in New York City. These include:</h4>
+        <div id="first">
+          <h4>Option One:</h4>
+          • Keep base fare at $2.75
           <br>
-          <input type="checkbox" id="subway" value="subway">
-          <label for="subway">Subway</label><br>
+          <br>• Eliminate bonus
           <br>
-          <input type="checkbox" id="app" value="app">
-          <label for="app App">Ridesharing (Lyft, Uber, VIA or Juno)</label><br>
+          <br>• 5.0% effective increase
           <br>
-          <input type="checkbox" id="taxi" value="taxi">
-          <label for="taxi">Taxi (Yellow or green)</label><br>
+          <br>• 7 day pass: $33 (3.1% increase)
           <br>
-          <input type="checkbox" id="pcar" value="pcar">
-          <label for="pcar">Personal vehicle or carpool</label><br>
+          <br>• 30 day pass: $127 (5% increase)
           <br>
-          <input type="checkbox" id="bike" value="bike">
-          <label for="bike">Bicycle</label><br>
-        </form>
-
+          <div id="second">
+            <h4> Option Two:</h4>
+            • Increase base fare to $3.00
+            <br>
+            <br>• Increase bonus to 10%
+            <br>
+            <br>• Buy 10, get one free
+            <br>
+            <br>• 7 day pass: $33 (3.1% increase)
+            <br>
+            <br>• 30 day pass: $126.25 (4.35% increase)</p>
+          </div>
+          <hr>
+          <form id="option">
+            <h4>What is your preferred method of travel? Mark All Aplicable</h4>
+            <input type="checkbox" id="walk" value="walk">
+            <label for="walk">Walking</label><br>
+            <br>
+            <input type="checkbox" id="subway" value="subway">
+            <label for="subway">Subway</label><br>
+            <br>
+            <input type="checkbox" id="app" value="app">
+            <label for="app App">Ridesharing (Lyft, Uber, VIA or Juno)</label><br>
+            <br>
+            <input type="checkbox" id="taxi" value="taxi">
+            <label for="taxi">Taxi (Yellow or green)</label><br>
+            <br>
+            <input type="checkbox" id="pcar" value="pcar">
+            <label for="pcar">Personal vehicle or carpool</label><br>
+            <br>
+            <input type="checkbox" id="bike" value="bike">
+            <label for="bike">Bicycle</label><br>
+          </form>
+        </div>
         <br>
         <hr>
-
         <form id="numbers-input">
-          <h3>Total Number Of Rides Per Week — Subway Or Bus</h3>
-          <br>
+          <h4>Total Number Of Rides Per Week — Subway Or Bus</h4>
           <p>Bus: <input type="number" class="busr" id="busr" max=" 14" placeholder="Maximum 14" autofocus /></p>
-          <br>
           <p>Subway: <input type="number" class="subwayr" id="subwayr" max=" 14" placeholder="Maximum 14" autofocus /></p>
-          <br>
           <hr>
         </form>
 
         <form id="commute-time-radio">
-          <h2>How long is your commute?</h2>
+          <h4>How long is your commute?</h4>
           <input type="radio" name="commutet" value="15"> 20 minutes or less
           <br>
           <br>
@@ -90,7 +104,6 @@
           <br>
           <br>
         </form>
-        <br>
         <hr>
       </div>
 
